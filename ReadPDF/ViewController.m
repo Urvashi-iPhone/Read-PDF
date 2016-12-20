@@ -13,10 +13,18 @@
 @end
 
 @implementation ViewController
+@synthesize read_pdfview;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    //PDFAddress = [NSURL URLWithString:@"https://gradcollege.okstate.edu/sites/default/files/PDF_linking.pdf"];
+    
+    PDFAddress=[NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"PDF_linking" ofType:@"pdf"]];
+    request = [NSURLRequest requestWithURL:PDFAddress];
+    [read_pdfview loadRequest:request];
+
 }
 
 - (void)didReceiveMemoryWarning {

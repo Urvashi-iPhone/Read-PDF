@@ -13,18 +13,8 @@
 		04A24C841B2C2A02002CC165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A24C821B2C2A02002CC165 /* Main.storyboard */; };
 		04A24C861B2C2A02002CC165 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A24C851B2C2A02002CC165 /* Images.xcassets */; };
 		04A24C891B2C2A02002CC165 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A24C871B2C2A02002CC165 /* LaunchScreen.xib */; };
-		04A24C951B2C2A03002CC165 /* ReadPDFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A24C941B2C2A03002CC165 /* ReadPDFTests.m */; };
+		22C3DFA71B7357D4007C27DE /* PDF_linking.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 22C3DFA61B7357D4007C27DE /* PDF_linking.pdf */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		04A24C8F1B2C2A03002CC165 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 04A24C6D1B2C2A02002CC165 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 04A24C741B2C2A02002CC165;
-			remoteInfo = ReadPDF;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		04A24C751B2C2A02002CC165 /* ReadPDF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadPDF.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,20 +27,13 @@
 		04A24C831B2C2A02002CC165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04A24C851B2C2A02002CC165 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		04A24C881B2C2A02002CC165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		04A24C8E1B2C2A03002CC165 /* ReadPDFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadPDFTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A24C931B2C2A03002CC165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04A24C941B2C2A03002CC165 /* ReadPDFTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadPDFTests.m; sourceTree = "<group>"; };
+		22C3DFA61B7357D4007C27DE /* PDF_linking.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = PDF_linking.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		04A24C721B2C2A02002CC165 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		04A24C8B1B2C2A03002CC165 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,7 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				04A24C751B2C2A02002CC165 /* ReadPDF.app */,
-				04A24C8E1B2C2A03002CC165 /* ReadPDFTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +63,7 @@
 		04A24C771B2C2A02002CC165 /* ReadPDF */ = {
 			isa = PBXGroup;
 			children = (
+				22C3DFA61B7357D4007C27DE /* PDF_linking.pdf */,
 				04A24C7C1B2C2A02002CC165 /* AppDelegate.h */,
 				04A24C7D1B2C2A02002CC165 /* AppDelegate.m */,
 				04A24C7F1B2C2A02002CC165 /* ViewController.h */,
@@ -139,24 +122,6 @@
 			productReference = 04A24C751B2C2A02002CC165 /* ReadPDF.app */;
 			productType = "com.apple.product-type.application";
 		};
-		04A24C8D1B2C2A03002CC165 /* ReadPDFTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 04A24C9B1B2C2A03002CC165 /* Build configuration list for PBXNativeTarget "ReadPDFTests" */;
-			buildPhases = (
-				04A24C8A1B2C2A03002CC165 /* Sources */,
-				04A24C8B1B2C2A03002CC165 /* Frameworks */,
-				04A24C8C1B2C2A03002CC165 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				04A24C901B2C2A03002CC165 /* PBXTargetDependency */,
-			);
-			name = ReadPDFTests;
-			productName = ReadPDFTests;
-			productReference = 04A24C8E1B2C2A03002CC165 /* ReadPDFTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +133,6 @@
 				TargetAttributes = {
 					04A24C741B2C2A02002CC165 = {
 						CreatedOnToolsVersion = 6.1;
-					};
-					04A24C8D1B2C2A03002CC165 = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = 04A24C741B2C2A02002CC165;
 					};
 				};
 			};
@@ -189,7 +150,6 @@
 			projectRoot = "";
 			targets = (
 				04A24C741B2C2A02002CC165 /* ReadPDF */,
-				04A24C8D1B2C2A03002CC165 /* ReadPDFTests */,
 			);
 		};
 /* End PBXProject section */
@@ -199,16 +159,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C3DFA71B7357D4007C27DE /* PDF_linking.pdf in Resources */,
 				04A24C841B2C2A02002CC165 /* Main.storyboard in Resources */,
 				04A24C891B2C2A02002CC165 /* LaunchScreen.xib in Resources */,
 				04A24C861B2C2A02002CC165 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		04A24C8C1B2C2A03002CC165 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,23 +179,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		04A24C8A1B2C2A03002CC165 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				04A24C951B2C2A03002CC165 /* ReadPDFTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		04A24C901B2C2A03002CC165 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 04A24C741B2C2A02002CC165 /* ReadPDF */;
-			targetProxy = 04A24C8F1B2C2A03002CC165 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		04A24C821B2C2A02002CC165 /* Main.storyboard */ = {
@@ -297,7 +235,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -332,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -359,40 +297,6 @@
 			};
 			name = Release;
 		};
-		04A24C9C1B2C2A03002CC165 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ReadPDFTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReadPDF.app/ReadPDF";
-			};
-			name = Debug;
-		};
-		04A24C9D1B2C2A03002CC165 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ReadPDFTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReadPDF.app/ReadPDF";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -412,14 +316,7 @@
 				04A24C9A1B2C2A03002CC165 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		04A24C9B1B2C2A03002CC165 /* Build configuration list for PBXNativeTarget "ReadPDFTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				04A24C9C1B2C2A03002CC165 /* Debug */,
-				04A24C9D1B2C2A03002CC165 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+{
+    NSURL *PDFAddress;
+    NSURLRequest *request;
+}
+@property (weak, nonatomic) IBOutlet UIWebView *read_pdfview;
 
 @end
 
